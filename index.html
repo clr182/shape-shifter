@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/styles.css">
+    <title>Your Web Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Canvas editor</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="column centered-column">
+                <canvas id="myCanvas" width="200" height="200"></canvas>
+                <p>Centered Column Content</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--BACKGROUND CANVAS COLOUR-->
+            <div class="column">
+                <label for="canvasColour">Background colour:</label>
+            </div>
+            <div class="column">
+                <div class = "slider-container">
+                    <input type="color" id="canvasBackgroundColorInput" onchange="changeBackgroundCanvasColor()">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--FOREGROUND CANVAS COLOUR-->
+            <div class="column">
+                <label for="canvasColour">Foreground colour:</label>
+            </div>
+            <div class="column">
+                <div class = "slider-container">
+                    <input type="color" id="canvasForegroundColorInput" onchange="changeForegroundCanvasColor()">
+                </div>
+            </div>
+        </div>
+
+        <div class="rowtitle">Eyes</div>
+        <div class="row">
+            <!--EYES-->
+            <div class="column">
+                <label for="imageSizeSlider">Size:</label>
+                <label for="imagePositionSlider">Position:</label>
+            </div>
+            <div class="column">
+                <div class = "slider-container">
+                    <input type="range" id="imageSizeSlider" min="50" max="125" step="2" value="100">
+                </div>
+                <div class = "slider-container">
+                    <input type="range" id="imagePositionSlider" min="-50" max="50" step="1" value="0">
+                </div>
+                <button id="prevImageBtn">Previous</button>
+                <button id="nextImageBtn">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/resources/assets/script.js"></script> 
+</body>
+</html>

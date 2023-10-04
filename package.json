@@ -1,0 +1,11 @@
+{
+  "name": "pp-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon ./src/index.html"
+  },
+  "author": "",
+  "license": "ISC"
+}
